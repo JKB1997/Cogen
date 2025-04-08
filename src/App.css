@@ -1,0 +1,115 @@
+body, html, .App {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #1e3a8a;
+  line-height: 1.2;
+}
+.navbar a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.navbar a:hover {
+  color: #1d4ed8;
+}
+.call-box a {
+  background-color: #dbeafe;
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: #1e40af;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid #93c5fd;
+  transition: background-color 0.3s ease;
+}
+.call-box a:hover {
+  background-color: #bfdbfe;
+}
+.hero {
+  background-color: #f3f4f6;
+  padding: 60px 20px;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 1200px;
+  width: 100%;
+}
+.hero-text {
+  max-width: 600px;
+}
+.hero-text h1 {
+  font-size: 2.5rem;
+  color: #000;
+  margin-bottom: 16px;
+}
+.hero-text p {
+  color: #4b5563;
+  font-size: 1.2rem;
+  margin-bottom: 24px;
+}
+.call-button {
+  background-color: #2563eb;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 9999px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.call-button:hover {
+  background-color: #1d4ed8;
+}
+.hero-bg img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+.floating-phone,
+.floating-whatsapp {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  z-index: 999;
+}
+.floating-phone {
+  left: 20px;
+  bottom: 80px;
+}
+.floating-whatsapp {
+  right: 20px;
+  bottom: 20px;
+}
+.floating-phone img,
+.floating-whatsapp img {
+  width: 100%;
+  height: auto;
+}
